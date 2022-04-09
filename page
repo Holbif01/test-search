@@ -1,0 +1,13 @@
+const { I, main_page } = inject();
+
+
+module.exports = {
+
+loginAsRegistredUser()  {;    
+    I.click('#headerLogin');     
+    I.fillField('$user-login-form-email', 'filipholbik@gmail.com');
+    I.fillField('$user-login-form-password', 'ule3tutame')
+    I.click('$btnSignIn');
+    }   
+  
+}
