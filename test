@@ -1,1 +1,13 @@
+Feature('rohlicek');
 
+Scenario('login', ({ I }) => {
+    I.amOnPage('https://www.rohlik.cz/rohlicek');
+    I.click('Přihlásit');     
+    I.fillField('Váš e-mail ', 'filipholbik@gmail.com');
+    I.fillField('Vaše heslo', 'ule3tutame')
+    I.click('#btnSignIn');
+    I.see('Klub Rohlíček'); 
+    //main_page.loginAsRegistredUser()
+    I.see('FH')
+
+}).tag('@acctest');                    
